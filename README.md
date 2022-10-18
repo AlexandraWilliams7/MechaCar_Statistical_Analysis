@@ -1,9 +1,10 @@
 # MechaCar_Statistical_Analysis
-### Overview
-### Purpose
+## Overview
+## Purpose
 
 ## Linear Regression to Predict MPG
-<!-- image of R console -->
+![deliv1](https://user-images.githubusercontent.com/105830665/196563413-370c2969-782c-4cdc-b0c8-8e154d8eff22.png)
+
 ### Summary
 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 Based of the signficiant value standard at 0.05, there are two variables that show a non-random amount of variance. The Vehicle-length and the ground_clearances are the two variables. The vehicle_length and ground_clearance p-values are 2.60e-12 and 5.21e-08, respectively. Both p-values are less than our 0.05 standard. 
