@@ -5,7 +5,6 @@
 ## Linear Regression to Predict MPG
 ![deliv1](https://user-images.githubusercontent.com/105830665/196563413-370c2969-782c-4cdc-b0c8-8e154d8eff22.png)
 
-### Summary
 1. Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 Based of the signficiant value standard at 0.05, there are two variables that show a non-random amount of variance. The Vehicle-length and the ground_clearances are the two variables. The vehicle_length and ground_clearance p-values are 2.60e-12 and 5.21e-08, respectively. Both p-values are less than our 0.05 standard. 
 
@@ -19,4 +18,38 @@ The slope for the linear model is not considered to be zero. Since the intercept
 
 3. Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 Since the R-Squared of this model is .0715 or 71%, this model has a fairly high rate at predicting the mpg of the MechaCar.
+
+## Summary Statistics on Suspension Coils
+![deliv2 1](https://user-images.githubusercontent.com/105830665/196772875-2f164f6d-d92e-475d-808e-8406a78c746d.png)
+
+![deliv2 2](https://user-images.githubusercontent.com/105830665/196772985-92022786-7910-403f-8809-3bbf8282c0b6.png)
+
+1. The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+Base on the variance for the total summary, the variance was 62 for the suspension coils. the Total summary variance is less than 100 pounds per square inch, 62<100. Now if the lot summary is used, Lot 3 is the only lot that variance is high. The variance for Lot 3 is 170 which is greater than the 100 pounds per square inch, 170 > 100. So the suspension coils in lot 3 would not be up to design specifications.
+
+## T-Tests on Suspension Coils
+1. T-test on total sample 
+
+![deliv3 1](https://user-images.githubusercontent.com/105830665/197021852-21e74a4e-3d82-4539-84d8-440bac5947fa.png)
+
+This T-test shows a p-value of 0.06028. Using the 0.05 standard, we fail to reject the null hypothesis because 0.06 > 0.05.
+
+2. T-test for each lot 
+- **LOT 1**
+![deliv3 2](https://user-images.githubusercontent.com/105830665/197022327-6621ca8e-6c7f-4306-806b-4b2921851dcf.png)
+
+For Lot 1 the p-value is 1. Since 1 > 0.05, we fail to reject  the null hypothesis.
+
+- **LOT 2**
+![deliv3 3](https://user-images.githubusercontent.com/105830665/197022670-623ca170-170d-4a72-b92f-1c62983048a8.png)
+
+For Lot 2 the p-value is .61. Since .61 > 0.05, we fail to reject  the null hypothesis.
+
+- **LOT 3** 
+![deliv3 4](https://user-images.githubusercontent.com/105830665/197023560-80bff681-b39d-44d5-98db-6dd17c2e93eb.png)
+
+For Lot 3 the p-value is .04 . Since .04 < 0.05, we can reject  the null hypothesis.
+
+
+
 
